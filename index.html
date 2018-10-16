@@ -16,18 +16,20 @@
   </div>
   <div class="exo">
 
-  <button class="buttonmore">+</button><input id="result" value=0></input><button class="buttonless">-</button>
+  <button class="buttonless">-</button><input id="result" value=0></input><button class="buttonmore">+</button>
 
   </div>
 
 <script>
-   $(".buttonmore").click(function(){
+$(function(){ //lance les fonctions après chargement complet de DOM
+    $(".buttonmore").click(function(){
      result.value++; // rajouter 1 à la valeur
     })
 
    $(".buttonless").click(function(){
      result.value--; // oter 1 à la valeur
     })
+})
 </script>
 </body>
 
